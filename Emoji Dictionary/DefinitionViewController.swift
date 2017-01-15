@@ -24,7 +24,7 @@ class DefinitionViewController: UIViewController {
         // Do any additional setup after loading the view.
     
         EmojiLabel.text = emoji.stringEmoji
-        BirthyearLabel.text = "Origination 1Date: \(emoji.birthYear)"
+        BirthyearLabel.text = "Origination Date: \(emoji.birthYear)"
         CategoryLabel.text = "Category: \(emoji.category)"
         definationLabel.text = "Definition: \(emoji.definition)"
         
