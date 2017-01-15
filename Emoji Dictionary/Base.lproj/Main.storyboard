@@ -68,17 +68,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alm-zn-bFd">
+                                <rect key="frame" x="122.5" y="403" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-li-ERr">
+                                <rect key="frame" x="129" y="444" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="r9v-75-AaC" firstAttribute="top" secondItem="Yke-dv-PD8" secondAttribute="bottom" constant="50" id="3WK-SW-It5"/>
+                            <constraint firstItem="HWo-li-ERr" firstAttribute="top" secondItem="Alm-zn-bFd" secondAttribute="bottom" constant="20" id="67f-DN-nuX"/>
                             <constraint firstItem="Yke-dv-PD8" firstAttribute="top" secondItem="axN-r0-iyr" secondAttribute="bottom" constant="9" id="kxf-oL-U6D"/>
+                            <constraint firstItem="Alm-zn-bFd" firstAttribute="top" secondItem="r9v-75-AaC" secondAttribute="bottom" constant="20" id="qTK-hs-mcF"/>
+                            <constraint firstItem="HWo-li-ERr" firstAttribute="centerX" secondItem="Alm-zn-bFd" secondAttribute="centerX" id="tDv-3v-KuP"/>
                             <constraint firstItem="r9v-75-AaC" firstAttribute="centerX" secondItem="Yke-dv-PD8" secondAttribute="centerX" id="v9m-V3-wU8"/>
                             <constraint firstItem="Yke-dv-PD8" firstAttribute="centerX" secondItem="To1-O9-7fQ" secondAttribute="centerX" id="wB9-sO-BtO"/>
+                            <constraint firstItem="Alm-zn-bFd" firstAttribute="centerX" secondItem="r9v-75-AaC" secondAttribute="centerX" id="xBZ-tG-wrR"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Emojilable" destination="Yke-dv-PD8" id="fyg-us-aI1"/>
+                        <outlet property="BirthyearLabel" destination="HWo-li-ERr" id="Zd2-aC-0Xr"/>
+                        <outlet property="CategoryLabel" destination="Alm-zn-bFd" id="MO1-nf-oib"/>
+                        <outlet property="EmojiLabel" destination="Yke-dv-PD8" id="s3d-Bb-kKe"/>
                         <outlet property="definationLabel" destination="r9v-75-AaC" id="Mq5-33-om1"/>
                     </connections>
                 </viewController>
